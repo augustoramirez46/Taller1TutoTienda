@@ -1,4 +1,14 @@
 body {
-  background: linear-gradient(286.73deg, #F2EFD3 34.3%, rgba(255, 255, 255, 0) 95.4%), #FAF9E8;
+  background: linear-gradient(328.55deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
+}
+
+.contacto {
+  background: #21c090;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=styles.css.map */
