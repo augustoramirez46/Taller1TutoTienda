@@ -11,7 +11,7 @@
 html,
 body {
   background: linear-gradient(328.55deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
-  height: 100%;
+  height: 110%;
   font-family: 'Lato';
   font-size: 16px;
   -webkit-box-sizing: border-box;
@@ -40,14 +40,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 89%;
   margin-top: 1em;
 }
 
 .landing__elipse {
   position: absolute;
-  top: 100px;
+  top: 70px;
   right: 150px;
   height: 800px;
 }
@@ -60,25 +62,73 @@ body {
 }
 
 .landing__imglogo {
-  margin-left: 50%;
+  margin-left: 15%;
   height: 35em;
 }
 
 .landing__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 14%;
+  width: 50%;
   position: relative;
 }
 
-.landing__text {
+.landing__title {
   position: absolute;
-  top: 410px;
-  left: 0px;
+  top: 650px;
+  left: -150px;
   font-family: 'lato';
-  font-size: 5em;
+  font-size: 4.5em;
+  line-height: 65px;
   font-weight: 900;
 }
 
 .landing__imgArt {
-  height: 800px;
-  margin-top: 1em;
+  height: 750px;
+  margin-top: 25%;
+}
+
+.publicidadCalcas {
+  height: 400px;
+  width: 100%;
+  background: #21c090;
+  -webkit-box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.publicidadCalcas__img {
+  height: 470px;
+  position: relative;
+  top: -70px;
+  margin: 0em 3em;
+}
+
+.publicidadCalcas__article {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.publicidadCalcas__title {
+  text-align: center;
+  font-weight: 900;
+}
+
+.publicidadCalcas__body {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
