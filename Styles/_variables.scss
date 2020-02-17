@@ -1,2 +1,12 @@
 $mainColor:  rgb(33, 192, 144);
 $bgGradient: linear-gradient(328.55deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
+
+%link-style {
+    text-decoration: none;
+    font-size: .75em;
+    font-family: 'Lato';
+    font-style: normal;
+    color: #73738D;
+    margin: 6em 4em 0em 4em;
+    
+}
