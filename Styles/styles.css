@@ -44,14 +44,15 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: 89%;
+  overflow: hidden;
   margin-top: 1em;
 }
 
 .landing__elipse {
   position: absolute;
-  top: 70px;
-  right: 150px;
-  height: 800px;
+  top: 250px;
+  right: -50px;
+  height: 700px;
 }
 
 .landing__elipse--small {
@@ -64,6 +65,10 @@ body {
 .landing__imglogo {
   margin-left: 15%;
   height: 35em;
+}
+
+.landing__imglogo:hover {
+  fill: red;
 }
 
 .landing__article {
@@ -83,6 +88,11 @@ body {
   font-size: 4.5em;
   line-height: 65px;
   font-weight: 900;
+  color: #605D5D;
+}
+
+.landing__title--posters {
+  color: #21c090;
 }
 
 .landing__imgArt {
@@ -113,11 +123,16 @@ body {
 }
 
 .publicidadCalcas__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -125,10 +140,23 @@ body {
 
 .publicidadCalcas__title {
   text-align: center;
+  font-style: normal;
   font-weight: 900;
+  font-size: 72px;
+  margin: 0px;
+  text-align: center;
+  color: #EBEBFE;
 }
 
 .publicidadCalcas__body {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: .85em;
+  line-height: 1em;
   text-align: center;
+  color: #EBEBFE;
+  margin: 0px;
+  margin-bottom: 2em;
 }
 /*# sourceMappingURL=styles.css.map */
