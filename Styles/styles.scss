@@ -17,8 +17,25 @@ body {
 .colorChoose {
     height: 83%;
     display: flex;
+    flex-wrap: wrap;
     background: linear-gradient(135.93deg, #EFFFFA 5.2%, #EFFFFA 44.38%, #D9EFEE 81.19%);
 
+    &__section {
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__selector {}
+
+    &__circle {
+        filter: drop-shadow (20px 20px 20px rgba(0, 0, 0, 0.25));
+        width: 45px;
+        height: 40px;
+
+
+
+
+    }
 
 }
-
