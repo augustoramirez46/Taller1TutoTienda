@@ -67,10 +67,6 @@ body {
   height: 35em;
 }
 
-.landing__imglogo:hover {
-  fill: red;
-}
-
 .landing__article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,5 +154,13 @@ body {
   color: #EBEBFE;
   margin: 0px;
   margin-bottom: 2em;
+}
+
+.colorChoose {
+  height: 83%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: linear-gradient(135.93deg, #EFFFFA 5.2%, #EFFFFA 44.38%, #D9EFEE 81.19%);
 }
 /*# sourceMappingURL=styles.css.map */

@@ -51,10 +51,9 @@
         
         margin-left: 15%;
         height: 35em;
+
     }
-    &__imglogo:hover {
-        fill: red;
-    }
+ 
 
     &__article {
         display: flex;
@@ -62,6 +61,7 @@
         margin-left: 14%;
         width: 50%;
         position: relative;
+        
     }
 
     &__title {
