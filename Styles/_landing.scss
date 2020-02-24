@@ -41,8 +41,9 @@
     }
 
     &__elipse--small {
-        height: 130px *.8;
-        width: 140px *.8;
+        height: 250px ;
+        transform: rotate(45deg) ;
+        
         left: 50px;
         top: 600px;
     }
