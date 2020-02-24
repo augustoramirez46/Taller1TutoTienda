@@ -21,7 +21,9 @@ body {
     background: linear-gradient(135.93deg, #EFFFFA 5.2%, #EFFFFA 44.38%, #D9EFEE 81.19%);
 
     &__section {
-        margin-right: auto;
+      
+        width: 100%;
+        height: fit-content;
         display: flex;
         flex-direction: row;
     }
