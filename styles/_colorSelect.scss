@@ -1,5 +1,5 @@
 .colorChoose {
-    height: 83%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     background: linear-gradient(135.93deg, #EFFFFA 5.2%, #EFFFFA 44.38%, #D9EFEE 81.19%);
@@ -7,8 +7,9 @@
 
     &__section {
 
-        width: 100%;
+        width: 100vw;
         height: fit-content;
+        align-content: center;
         display: flex;
         flex-direction: row;
         margin: 0% auto 0% 15%;
@@ -33,13 +34,14 @@
         font-size: 12px;
         line-height: 20px;
         letter-spacing: 0.12em;
-        margin: .7% 0 0 2%;
+        margin-left: 20px;
 
         color: #7A6D6D;
     }
 
     &__content--emphasis {
         color: $mainColor;
+        margin: 0;
     }
 
     &__selector {

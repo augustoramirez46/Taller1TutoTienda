@@ -11,7 +11,6 @@
 html,
 body {
   background: linear-gradient(328.55deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
-  height: 110%;
   font-family: 'Lato';
   font-size: 16px;
   -webkit-box-sizing: border-box;
@@ -43,7 +42,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 89%;
+  height: 100vh;
   overflow: hidden;
   margin-top: 1em;
 }
@@ -174,7 +173,7 @@ body {
 }
 
 .colorChoose {
-  height: 83%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,10 +185,12 @@ body {
 }
 
 .colorChoose__section {
-  width: 100%;
+  width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -ms-flex-line-pack: center;
+      align-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,12 +218,13 @@ body {
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.12em;
-  margin: .7% 0 0 2%;
+  margin-left: 20px;
   color: #7A6D6D;
 }
 
 .colorChoose__content--emphasis {
   color: #21c090;
+  margin: 0;
 }
 
 .colorChoose__selector {
@@ -239,7 +241,7 @@ body {
 }
 
 .gallery {
-  height: 85%;
+  height: 100vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,21 +249,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 5em;
   background: linear-gradient(317.09deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
   -webkit-box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
 }
 
 .gallery__choose {
-  margin: 60px auto;
-  padding: 1%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  margin: 60px auto 0;
 }
 
 .gallery__ellipse {
@@ -275,6 +269,18 @@ body {
   font-size: .85em;
   font-weight: 700;
   color: #63637c;
-  margin-top: 150px;
+}
+
+.spec {
+  background: #21c090;
+}
+
+.spec__paragraph {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #E0E0F1;
 }
 /*# sourceMappingURL=styles.css.map */

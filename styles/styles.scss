@@ -5,7 +5,7 @@
 html,
 body {
     background: $bgGradient;
-    height: 110%;
+
     font-family: 'Lato';
     font-size: 16px;
     box-sizing: border-box;
@@ -14,44 +14,18 @@ body {
 @import "./landing";
 @import "./calaca";
 @import "./colorSelect";
+@import "./gallery";
 
-.gallery {
-    height: 85%;
+.spec {
+    background: $mainColor;
 
-    position: relative;
-    display: flex;
-   
-    justify-content: center;
-    padding-right: 5em;
+    &__paragraph {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
 
-    background: linear-gradient(317.09deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
-    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
-
-    &__choose {
-        margin: 60px auto;
-        padding: 1%;
-        height: fit-content;
-        align-items: flex-start;
+        color: #E0E0F1;
     }
-
-    &__ellipse {
-        position: absolute;
-        left: 3%;
-        top: -90px;
-        height: 200px;
-    }
-
-    &__link {
-        @extend %link-style;
-
-    }
-
-    &__link--select {
-
-        font-size: .85em;
-        font-weight: 700;
-        color: rgb(99, 99, 124);
-        margin-top: 150px;
-    }
-
 }
