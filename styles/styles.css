@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,400,700,900,900i&display=swap");
-.mainNav__link {
+.nav__link, .gallery__link {
   text-decoration: none;
   font-size: .75em;
   font-family: 'Lato';
@@ -18,7 +18,7 @@ body {
           box-sizing: border-box;
 }
 
-.mainNav {
+.nav {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,7 +29,7 @@ body {
   padding-right: 5em;
 }
 
-.mainNav__link--select {
+.nav__link--select {
   font-size: .85em;
   font-weight: 700;
   color: #63637c;
@@ -236,5 +236,45 @@ body {
   width: 65px;
   height: 60px;
   margin: 15%;
+}
+
+.gallery {
+  height: 85%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 5em;
+  background: linear-gradient(317.09deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
+  -webkit-box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
+}
+
+.gallery__choose {
+  margin: 60px auto;
+  padding: 1%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.gallery__ellipse {
+  position: absolute;
+  left: 3%;
+  top: -90px;
+  height: 200px;
+}
+
+.gallery__link--select {
+  font-size: .85em;
+  font-weight: 700;
+  color: #63637c;
+  margin-top: 150px;
 }
 /*# sourceMappingURL=styles.css.map */

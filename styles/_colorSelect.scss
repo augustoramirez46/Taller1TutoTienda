@@ -1,0 +1,63 @@
+.colorChoose {
+    height: 83%;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(135.93deg, #EFFFFA 5.2%, #EFFFFA 44.38%, #D9EFEE 81.19%);
+    align-content: flex-start;
+
+    &__section {
+
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        margin: 0% auto 0% 15%;
+        padding-top: 5%;
+    }
+
+    &__title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 72px;
+        margin: 0% 0 0 0;
+
+
+        color: #605D5D;
+    }
+
+    &__content {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.12em;
+        margin: .7% 0 0 2%;
+
+        color: #7A6D6D;
+    }
+
+    &__content--emphasis {
+        color: $mainColor;
+    }
+
+    &__selector {
+        width: 40%;
+        margin: 0% 0% 0% 15%;
+
+    }
+
+    &__circle {
+        filter: drop-shadow (20px 20px 20px rgba(0, 0, 0, 0.25));
+        width: 65px;
+        height: 60px;
+        margin: 15%;
+
+
+
+
+
+    }
+
+}
