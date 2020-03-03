@@ -273,6 +273,25 @@ body {
 
 .spec {
   background: #21c090;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spec__mockup--behind {
+  position: absolute;
+  top: 0px;
+  left: 500px;
+}
+
+.spec__mockup {
+  height: 600px;
 }
 
 .spec__paragraph {
@@ -282,5 +301,54 @@ body {
   font-size: 12px;
   line-height: 14px;
   color: #E0E0F1;
+}
+
+.spec__title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.435em;
+  color: #E0E0F1;
+}
+
+.spec__ca {
+  font-family: Lato Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 78px;
+  color: #EBEBFE;
+}
+
+.spec__mi {
+  font-family: Lato Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 106px;
+  line-height: 86px;
+  /* or 86px */
+  color: #F2E6A8;
+}
+
+.spec__se {
+  font-family: Lato Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 116px;
+  line-height: 95px;
+  /* or 95px */
+  color: #EBEBFE;
+}
+
+.spec__tas {
+  font-family: Lato Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 71px;
+  line-height: 81.5%;
+  /* or 63px */
+  color: #EBEBFE;
 }
 /*# sourceMappingURL=styles.css.map */
