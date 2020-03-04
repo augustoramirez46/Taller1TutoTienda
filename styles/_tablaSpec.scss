@@ -1,0 +1,100 @@
+.spec {
+    background: $mainColor;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    padding-left: 90px;
+
+    &__mockups {
+        position: relative;
+    }
+
+    &__mockup {
+        height: 600px;
+
+        &--behind {
+            position: absolute;
+            top: -30px;
+            left: -90px;
+        }
+    }
+
+
+
+    &__paragraph {
+        width: 400px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 25px;
+        color: #E0E0F1;
+        margin: auto 5px;
+    }
+
+    &__title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: .5em;
+
+        color: #E0E0F1;
+
+        &--contra {
+            letter-spacing: .27em;
+        }
+    }
+
+    &__camisetas {
+        margin: auto .2%
+    }
+
+    &__ca {
+        font-family: Lato Black;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 96px *1.5;
+        line-height: 78px;
+
+        color: $lightBlue;
+    }
+
+    &__mi {
+        font-family: Lato Black;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 106px *1.5;
+        line-height: 86px *1.5;
+        /* or 86px */
+
+
+        color: #F2E6A8;
+    }
+
+    &__se {
+        font-family: Lato Black;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 116px *1.5;
+        line-height: 95px *1.5;
+        /* or 95px */
+
+
+        color: $lightBlue;
+    }
+
+    &__tas {
+        font-family: Lato Black;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 71px *1.5;
+        line-height: 63px*1.5;
+        /* or 63px */
+
+
+        color: $lightBlue;
+    }
+}
