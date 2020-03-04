@@ -281,21 +281,25 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 90px;
+  padding-left: 140px;
+  height: 90vh;
 }
 
 .spec__mockups {
   position: relative;
+  margin: -150px 0 -150px 0;
 }
 
 .spec__mockup {
-  height: 600px;
+  padding-top: 20px;
+  height: 900px;
+  position: relative;
 }
 
 .spec__mockup--behind {
   position: absolute;
-  top: -30px;
-  left: -90px;
+  top: -90px;
+  left: -140px;
 }
 
 .spec__paragraph {
@@ -325,10 +329,11 @@ body {
 
 .spec__camisetas {
   margin: auto .2%;
+  font-style: normal;
+  font-weight: 900;
 }
 
 .spec__ca {
-  font-family: Lato Black;
   font-style: normal;
   font-weight: 900;
   font-size: 144px;
@@ -337,7 +342,6 @@ body {
 }
 
 .spec__mi {
-  font-family: Lato Black;
   font-style: normal;
   font-weight: 900;
   font-size: 159px;
@@ -347,8 +351,6 @@ body {
 }
 
 .spec__se {
-  font-family: Lato Black;
-  font-style: normal;
   font-weight: 900;
   font-size: 174px;
   line-height: 142.5px;
@@ -357,8 +359,6 @@ body {
 }
 
 .spec__tas {
-  font-family: Lato Black;
-  font-style: normal;
   font-weight: 900;
   font-size: 106.5px;
   line-height: 94.5px;
@@ -368,5 +368,72 @@ body {
 
 .footer {
   background: #EFFFFA;
+  margin-top: 10vh;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  margin: auto auto;
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 53px;
+  color: #605D5D;
+  margin: 0 auto;
+}
+
+.footer__input {
+  margin: 10px 0 0 0;
+  position: relative;
+}
+
+.footer__email {
+  height: 62px;
+  width: 400px;
+  margin: 0px auto;
+  border-radius: 37px;
+  -webkit-box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
+  border: none;
+  padding-left: 20px;
+}
+
+.footer__button {
+  height: 64px;
+  width: 233px;
+  margin: 0px auto;
+  border-radius: 37px;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
+  background: #21c090;
+  position: absolute;
+  left: 187px;
+  top: 0px;
+  margin: auto 0px;
 }
 /*# sourceMappingURL=styles.css.map */
