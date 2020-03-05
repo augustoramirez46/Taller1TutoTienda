@@ -5,11 +5,12 @@
 html,
 body {
     background: $bgGradient;
-
+    width: 100%;
     font-family: 'Lato';
     font-size: 16px;
     box-sizing: border-box;
 }
+
 
 @import "./landing";
 @import "./calaca";

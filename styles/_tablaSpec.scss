@@ -3,13 +3,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 140px;
     height: 90vh;
+    width: 100%;
+    position: relative;
 
     &__mockups {
         position: relative;
-        margin: -150px 0 -150px 0;
-    
+        margin: -150px 0 -150px 140px;
+        ;
+
     }
 
     &__mockup {
@@ -53,14 +55,14 @@
     }
 
     &__camisetas {
-        margin: auto .2%;   
+        margin: auto .2%;
         font-style: normal;
-        font-weight: 900;    
-        
+        font-weight: 900;
+
     }
 
     &__ca {
-      
+
         font-style: normal;
         font-weight: 900;
         font-size: 96px *1.5;
@@ -70,7 +72,7 @@
     }
 
     &__mi {
-        
+
         font-style: normal;
         font-weight: 900;
         font-size: 106px *1.5;
@@ -82,8 +84,8 @@
     }
 
     &__se {
-        
-        
+
+
         font-weight: 900;
         font-size: 116px *1.5;
         line-height: 95px *1.5;
@@ -94,8 +96,8 @@
     }
 
     &__tas {
-      
-      
+
+
         font-weight: 900;
         font-size: 71px *1.5;
         line-height: 63px*1.5;
