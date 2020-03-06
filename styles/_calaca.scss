@@ -7,8 +7,7 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-shrink: 1;
-
-    position: relative;
+    box-sizing: border-box position: relative;
 
     &__img {
         height: 470px;
@@ -67,8 +66,27 @@
     }
 
     @media (max-width: $smallDevice) {
+
+        align-content: center;
+        justify-content: center;
+
         &__img {
-            height: 200px;
+            height: 250px;
+            top: -40px;
+        }
+
+        &__title {
+            font-size: 70px;
+            margin: 0 auto;
+        }
+
+        &__article {
+            height: fit-content;
+            width: 65%;
+        }
+
+        &__br {
+            display: none;
         }
     }
 }

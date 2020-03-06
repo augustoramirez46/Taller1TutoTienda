@@ -22,6 +22,14 @@ body {
     */
 }
 
+.landing-color {
+  background: linear-gradient(328.55deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
 .nav {
   position: relative;
   display: -webkit-box;
@@ -60,6 +68,9 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  background-color: linear-gradient(328.55deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
+  z-index: 1;
+  position: absolute;
 }
 
 @media (max-width: 575.98px) {
@@ -71,16 +82,19 @@ body {
 .hamburguerbtn {
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
-  width: 60px;
-  height: 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: none;
-  padding: 10px;
-  margin-left: auto;
+  margin: 0px 0px 0px auto;
 }
 
 .hamburguerbtn__icon {
-  width: 60px;
-  height: 60px;
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 575.98px) {
@@ -88,8 +102,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
   }
 }
 
@@ -103,8 +115,8 @@ body {
           justify-content: flex-end;
   height: 110vh;
   width: 100%;
-  overflow: hidden;
   margin-top: 1em;
+  background-color: linear-gradient(328.55deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
 }
 
 .landing__elipse {
@@ -122,6 +134,10 @@ body {
           transform: rotate(45deg);
   left: 50px;
   top: 600px;
+}
+
+.landing__elipse--border {
+  display: none;
 }
 
 .landing__imglogo {
@@ -159,6 +175,9 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .landing-color {
+    padding: 20px 20px 0px 0px;
+  }
   .nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -182,13 +201,21 @@ body {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0 0 0 0;
   }
   .landing__logo {
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
   .landing__imglogo {
-    height: 400px;
-    margin: auto;
+    height: 200px;
+    margin: auto auto;
   }
   .landing__imgArt {
     display: none;
@@ -198,6 +225,15 @@ body {
   }
   .landing__elipse {
     display: none;
+  }
+  .landing__elipse--border {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    height: 600px;
   }
 }
 
@@ -284,8 +320,29 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .publicidadCalcas {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .publicidadCalcas__img {
-    height: 200px;
+    height: 250px;
+    top: -40px;
+  }
+  .publicidadCalcas__title {
+    font-size: 70px;
+    margin: 0 auto;
+  }
+  .publicidadCalcas__article {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 65%;
+  }
+  .publicidadCalcas__br {
+    display: none;
   }
 }
 
@@ -316,6 +373,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0% auto 0% 15%;
   padding-top: 5%;
 }

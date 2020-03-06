@@ -1,3 +1,11 @@
+.landing-color {
+    background: $bgGradient;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
 .nav {
     position: relative;
     display: flex;
@@ -28,6 +36,10 @@
         display: flex !important;
         flex-direction: column;
         justify-content: end;
+        background-color: $bgGradient;
+        //posicion en z para mostrar en frente
+        z-index: 1;
+        position: absolute;
 
     }
 
@@ -40,20 +52,20 @@
 .hamburguerbtn {
     background-color: rgba($color: #000000, $alpha: 0);
     border-color: rgba($color: #000000, $alpha: 0);
-    width: 60px;
-    height: 60px;
+    width: fit-content;
+    height: fit-content;
     display: none;
-    padding: 10px;
-    margin-left: auto;
+
+    margin: 0px 0px 0px auto;
+
 
     &__icon {
-        width: 60px;
-        height: 60px;
+        width: 20px;
+        height: 20px;
     }
 
     @media (max-width: $smallDevice) {
         display: flex;
-        align-content: flex-end;
     }
 }
 
@@ -63,11 +75,9 @@
     justify-content: flex-end;
     height: 110vh;
     width: 100%;
-    overflow: hidden;
-
 
     margin-top: 1em;
-
+    background-color: $bgGradient;
 
     &__elipse {
 
@@ -82,9 +92,12 @@
     &__elipse--small {
         height: 250px;
         transform: rotate(45deg);
-
         left: 50px;
         top: 600px;
+    }
+
+    &__elipse--border {
+        display: none;
     }
 
     &__imglogo {
@@ -131,8 +144,14 @@
 }
 
 @media (max-width: $smallDevice) {
+
+    .landing-color {
+        padding: 20px 20px 0px 0px;
+    }
+
     .nav {
         flex-direction: column;
+
 
         &__link {
             margin: 35px 25px 0 auto;
@@ -153,14 +172,18 @@
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 0 0 0 0;
 
         &__logo {
             margin: auto;
+            display: flex;
+            justify-content: center;
+            width: 100%
         }
 
         &__imglogo {
-            height: 400px;
-            margin: auto;
+            height: 200px;
+            margin: auto auto;
         }
 
         &__imgArt {
@@ -173,6 +196,15 @@
 
         &__elipse {
             display: none;
+        }
+
+        &__elipse--border {
+            display: flex;
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+            height: 600px;
+
         }
     }
 }
