@@ -8,7 +8,13 @@ var handleHamClick = function (event) {
 
 hambtn.addEventListener('click', handleHamClick);
 
+function handleWindowResize(event) {
+    if (window.innerWidth > 575.98) {
+        mainnav.classList.remove('nav--mobile');
+    }
+}
 
+window.addEventListener('resize', handleWindowResize);
 
 
 

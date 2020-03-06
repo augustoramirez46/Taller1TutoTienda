@@ -10,7 +10,6 @@
     &__mockups {
         position: relative;
         margin: -150px 0 -150px 140px;
-        ;
 
     }
 
@@ -105,5 +104,16 @@
 
 
         color: $lightBlue;
+    }
+
+    @media (max-width: $smallDevice) {
+
+        &__mockups {
+            height: fit-content;
+        }
+
+        &__mockup {
+            height: 150px;
+        }
     }
 }
