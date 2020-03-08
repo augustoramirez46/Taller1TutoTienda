@@ -253,6 +253,8 @@ body {
           justify-content: center;
   -ms-flex-negative: 1;
       flex-shrink: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
 }
 
@@ -326,6 +328,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .publicidadCalcas__img {
     height: 250px;
@@ -546,6 +551,11 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .spec {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .spec__mockups {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -554,12 +564,19 @@ body {
   .spec__mockup {
     height: 150px;
   }
+  .spec__title {
+    font-size: 30px;
+  }
+  .spec__paragraph {
+    width: 350px;
+  }
 }
 
 .footer {
   background: #EFFFFA;
   margin-top: 10vh;
-  height: 30vh;
+  height: 30%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,7 +606,7 @@ body {
 .footer__title {
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 30px;
   line-height: 53px;
   color: #605D5D;
   margin: 0 auto;
@@ -625,5 +642,16 @@ body {
   left: 187px;
   top: 0px;
   margin: auto 0px;
+}
+
+@media (max-width: 575.98px) {
+  .footer__email {
+    height: 32px;
+    width: 200px;
+  }
+  .footer__button {
+    height: 32px;
+    width: 117px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

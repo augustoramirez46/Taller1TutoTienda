@@ -108,12 +108,22 @@
 
     @media (max-width: $smallDevice) {
 
+        height: fit-content;
+
         &__mockups {
             height: fit-content;
         }
 
         &__mockup {
             height: 150px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__paragraph {
+            width: 350px;
         }
     }
 }
