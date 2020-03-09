@@ -16,6 +16,10 @@ function handleWindowResize(event) {
 
 window.addEventListener('resize', handleWindowResize);
 
+var btnR = document.querySelector('.gallery__bton--right');
+var btnL = document.querySelector('.gallery__bton--left');
+var strip = document.querySelector('.gallery__strip');
+var gal = document.querySelector('.gallery__gallery');
 
 
 

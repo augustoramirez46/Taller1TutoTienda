@@ -3,6 +3,7 @@
     width: 100%;
     position: relative;
     display: flex;
+    flex-direction: column;
 
     justify-content: center;
 
@@ -34,6 +35,42 @@
 
     }
 
+    $w: 700px;
+    $h: 700px;
+
+    &__gallery {
+        box-sizing: border-box;
+        width: $w;
+        height: $h;
+        overflow: hidden;
+        margin: 10px auto;
+        position: relative;
+    }
+
+    &__strip {
+        display: flex;
+        transition: transform .3s ease-in-out;
+    }
+
+    &__img {
+        height: $h;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    &__bton {
+        position: absolute;
+        top: $h/2;
+
+        &--right {
+            right: 0px;
+        }
+
+        &--left {
+            left: 0px;
+        }
+    }
+
     @media (max-width: $smallDevice) {
         &__ellipse {
             position: absolute;
@@ -60,5 +97,7 @@
 
         }
     }
+
+
 
 }
