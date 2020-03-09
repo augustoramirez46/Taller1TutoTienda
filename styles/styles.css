@@ -463,9 +463,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: hidden;
   background: linear-gradient(317.09deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
   -webkit-box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
@@ -494,7 +494,7 @@ body {
   width: 700px;
   height: 700px;
   overflow: hidden;
-  margin: 10px auto;
+  margin: auto auto;
   position: relative;
 }
 
@@ -502,10 +502,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: -webkit-transform .3s ease-in-out;
-  transition: -webkit-transform .3s ease-in-out;
-  transition: transform .3s ease-in-out;
-  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
 }
 
 .gallery__img {
@@ -519,6 +519,15 @@ body {
 .gallery__bton {
   position: absolute;
   top: 350px;
+  height: 35px;
+  width: 80px;
+  border-radius: 37px;
+  border: none;
+  color: #EBEBFE;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.05);
+  background: #21c090;
 }
 
 .gallery__bton--right {
@@ -530,6 +539,40 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .gallery__gallery {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: auto auto;
+    position: relative;
+  }
+  .gallery__img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .gallery__bton {
+    position: absolute;
+    top: 150px;
+    font-size: 12px;
+    height: 40px;
+    width: 60px;
+    border-radius: 37px;
+    border: none;
+    cursor: pointer;
+    background: #21c090;
+    font-family: 'Lato';
+  }
+  .gallery__bton--right {
+    right: 0px;
+  }
+  .gallery__bton--left {
+    left: 0px;
+  }
   .gallery__ellipse {
     position: absolute;
     left: -50px;

@@ -4,9 +4,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
-
+    align-content: center;
+    overflow: hidden;
 
     background: linear-gradient(317.09deg, #EDE0D7 34.3%, #FAF9E8 95.4%);
     box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
@@ -43,13 +42,13 @@
         width: $w;
         height: $h;
         overflow: hidden;
-        margin: 10px auto;
+        margin: auto auto;
         position: relative;
     }
 
     &__strip {
         display: flex;
-        transition: transform .3s ease-in-out;
+        transition: transform .5s ease-in-out;
     }
 
     &__img {
@@ -61,6 +60,15 @@
     &__bton {
         position: absolute;
         top: $h/2;
+        height: 35px;
+        width: 80px;
+        border-radius: 37px;
+        border: none;
+
+        color: $lightBlue;
+        cursor: pointer;
+        box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.05);
+        background: $mainColor;
 
         &--right {
             right: 0px;
@@ -72,6 +80,46 @@
     }
 
     @media (max-width: $smallDevice) {
+
+        $w: 300px;
+        $h: 300px;
+
+        &__gallery {
+            box-sizing: border-box;
+            width: $w;
+            height: $h;
+            overflow: hidden;
+            margin: auto auto;
+            position: relative;
+        }
+
+        &__img {
+            height: $h;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        &__bton {
+            position: absolute;
+            top: $h/2;
+            font-size: 12px;
+            height: 40px;
+            width: 60px;
+            border-radius: 37px;
+            border: none;
+            cursor: pointer;
+            background: $mainColor;
+            font-family: 'Lato';
+
+            &--right {
+                right: 0px;
+            }
+
+            &--left {
+                left: 0px;
+            }
+        }
+
         &__ellipse {
             position: absolute;
             left: -50px;

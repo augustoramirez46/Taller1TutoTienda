@@ -19,8 +19,35 @@ window.addEventListener('resize', handleWindowResize);
 var btnR = document.querySelector('.gallery__bton--right');
 var btnL = document.querySelector('.gallery__bton--left');
 var strip = document.querySelector('.gallery__strip');
-var gal = document.querySelector('.gallery__gallery');
+var slider = document.querySelector('.gallery__gallery');
+var pX = 0;
+var width = slider.offsetWidth;
 
+function handleBtnNextClick() {
+    var quantity = strip.children.length;
+    if (pX > -width * (quantity - 1)) {
+        pX -= width;
+    } else {
+        pX = 0;
+    }
+
+    strip.style.transform = 'translate(' + pX + 'px, 0px)';
+}
+
+btnR.addEventListener('click', handleBtnNextClick);
+
+function handleBtnPrevClick() {
+    var quantity = strip.children.length;
+    if (pX < 0) {
+        pX += width;
+    } else {
+        pX = -width * (quantity - 1);
+    }
+
+    strip.style.transform = 'translate(' + pX + 'px, 0px)';
+}
+
+btnL.addEventListener('click', handleBtnPrevClick);
 
 
 
