@@ -178,12 +178,14 @@
             margin: auto;
             display: flex;
             justify-content: center;
-            width: 100%
+            width: 100%;
+
         }
 
         &__imglogo {
-            height: 200px;
+            height: 240px;
             margin: auto auto;
+            padding-left: 20px;
         }
 
         &__imgArt {

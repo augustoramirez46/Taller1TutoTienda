@@ -109,21 +109,45 @@
     @media (max-width: $smallDevice) {
 
         height: fit-content;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
 
         &__mockups {
-            height: fit-content;
+
+            margin: 0 auto;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            align-content: center;
         }
 
         &__mockup {
-            height: 150px;
+
+            height: 400px;
+            margin: auto auto;
+            padding: 0px 0px 0px 0px;
+
+            &--behind {
+                left: 30px;
+
+            }
         }
 
         &__title {
             font-size: 30px;
+            letter-spacing: .3em;
+
+            &--contra {
+                letter-spacing: .1em;
+                ;
+            }
         }
 
         &__paragraph {
-            width: 350px;
+            width: 270px;
+            margin-bottom: 60px;
         }
     }
 }

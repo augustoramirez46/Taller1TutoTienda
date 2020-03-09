@@ -34,4 +34,31 @@
 
     }
 
+    @media (max-width: $smallDevice) {
+        &__ellipse {
+            position: absolute;
+            left: -50px;
+            top: -50px;
+            height: 100px;
+            width: 100px;
+
+        }
+
+        &__choose {
+            display: flex;
+            padding: 5px 3px;
+            justify-content: space-around;
+            align-content: center;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 100%;
+            height: fit-content;
+        }
+
+        &__link {
+            margin: .75em;
+
+        }
+    }
+
 }
