@@ -49,6 +49,26 @@ function handleBtnPrevClick() {
 
 btnL.addEventListener('click', handleBtnPrevClick);
 
+var main = document.querySelector('.colorChoose__main');
+var thumbs = document.querySelectorAll('.colorChoose__circle');
+
+function handleCircleClick(elem) {
+    //srcImg
+    var src = elem.getAttribute('alt');
+
+    main.setAttribute('src', src);
+
+}
+
+function iterateThumbs(elem) {
+    elem.addEventListener('click', function () {
+        handleCircleClick(elem);
+    })
+}
+
+thumbs.forEach(iterateThumbs);
+
+
 
 
 

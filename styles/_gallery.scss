@@ -3,7 +3,8 @@
     width: 100%;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-content: center;
     overflow: hidden;
 
@@ -79,7 +80,10 @@
         }
     }
 
+
+
     @media (max-width: $smallDevice) {
+        flex-direction: column;
 
         $w: 300px;
         $h: 300px;
@@ -144,6 +148,8 @@
             margin: .75em;
 
         }
+
+
     }
 
 

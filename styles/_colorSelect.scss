@@ -59,6 +59,20 @@
 
     }
 
+    &__display {
+        width: auto;
+        margin: auto auto;
+    }
+
+    &__main {
+        width: 650px;
+        margin: auto;
+    }
+
+    &__thumbs {
+        display: none;
+    }
+
     @media (max-width: $smallDevice) {
 
         &__selector {
@@ -78,6 +92,21 @@
             &--noMobile {
                 display: none;
             }
+        }
+
+        &__display {
+            box-sizing: border-box;
+            width: auto;
+            margin: auto auto;
+        }
+
+        &__main {
+            width: 270px;
+            margin: 0px 0px 0px 55px;
+        }
+
+        &__thumbs {
+            display: none;
         }
     }
 
